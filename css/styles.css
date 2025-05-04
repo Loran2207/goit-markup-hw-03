@@ -7,6 +7,7 @@
     --backgroud-gray: #2F303A;
     --backgroud-lightgray: #F5F4FA;;
     --foregroud-primary:#2196F3;
+    --foregroud-secondary:hsla(0, 0%, 46%, 1);
     --foregroud-white:#ffffff;
 
 }
@@ -57,9 +58,20 @@ body {
     gap: 30px;
 }
 
+.contact-link{
+    color: var(--foregroud-secondary);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-link:hover{
+    color: var(--foregroud-primary);
+}
+
 .contact-item{
     text-decoration: none;
-    color: var(--text-secodnary);
+    color: inherit;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -67,9 +79,20 @@ body {
     letter-spacing: 0.28px;
 }
 
-.contact-item:hover{
-    color: var(--text-brand);
+.mail-icon{
+    fill: currentColor;
+    display: block;
+    width: 16px;
+    height: 12px;
 }
+
+.phone-icon{
+    fill: currentColor;
+    display: block;
+    width: 10px;
+    height: 16px;
+}
+
 
 .hero{
     width: auto;
